@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Poppins&family=Roboto&display=swap');       
+       
+       *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+          font-family: 'Roboto', sans-serif;
+          overflow-x: hidden;
+        }
+        a{
+            color: #fefefe;
+            text-decoration: none;
+        }
+        li{
+          list-style: none;
+        }
+        .hide{
+            display: none;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            justify-content: center;
+        }
+        .flex{
+          display: flex;
+          align-items: center;
+        }
+        .wrap{
+          flex-wrap: wrap;
+      }
+        .container{
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        .btn{
+            padding: 1rem 2.5rem;
+            background: #086AD8;
+            color: #fff;
+            border: none;
+            font-size: 22px;
+            font-weight: 400;
+            cursor: pointer;
+            transition: .2s all ease-in-out;
+        }
+        .btn:hover{
+          opacity: .9;
+          transform: scale(.9);
+        }
+        .header{
+            height:70px;
+            width: 100%;
+            padding: 0rem 4rem;
+            justify-content: space-between;
+            background: #086AD8;
+        }
+
+        .nav .links.flex{
+          width: 100%;
+          align-items: center !important;
+          justify-content: space-around;
+        }
+        .nav .links .nav-link{
+          margin-right: 1rem;
+          padding: .5rem 1.2rem;
+        }
+
+        .nav .links .nav-link:last-child{
+          margin-left: 7rem;
+          margin-right: 0;
+          padding: .8rem 1.6rem;
+          border: 2px solid #ffffff;
+      }
+
+      section{
+          margin-bottom: 3rem;
+      }
+        .hero.flex{
+            position: relative;
+            height: 95vh;
+            justify-content: space-between;
+        }
+        .hero-text{
+          align-self: flex-start;
+            margin-top: 7rem;
+            padding-left: 4rem;
+        }
+        .hero-text > h1{
+            font-size: 50px;
+            line-height: 4rem;
+        }
+        .hero-text > p{
+            font-size: 18px;
+            margin-top: 2rem;
+            letter-spacing: 1px;
+            line-height: 2rem;
+            color: #222222;
+        }
+        .hero-text .btn{
+            margin-top: 2rem;
+        }
+        .hero-vector-bg-img{
+            position: relative;
+            align-self: flex-start;
+            justify-self: flex-start;
+        }
+        .hero-vector-bg-img img{
+          width: 100%;
+          height: 100%;
+        }
+
+     /* ##################--ABOUT SECTION --############ */
+
+     h1.section-header{
+          text-align:center;
+          position: relative;
+          font-size: 50px;
+          margin: 6rem 0;
+     }
+     h1.section-header::after{
+          content: ' ';
+          width: 80px;
+          height: 7px;
+          background-color: #086AD8;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -15px;
+          margin: 0 auto;
+     }
+     .about-container{
+          justify-content: space-between;
+          gap: 30px;
+          flex-wrap: wrap;
+     }
+     .about-img img{
+          width: 100%;
+          height: 100%;
+     }
+     .about-desc h1{
+          font-size: 32px;
+          line-height: 39px;
+     }
+     .about-desc p, .services-desc p, .services-cat > div > div p, .client-desc p{
+          font-size: 20px;
+          color: #797979;
+          margin: 2rem 0;
+          line-height: 28px;
+     }
+/* ################ SERVICES SECTION ################## */
+     .services{
+          grid-template-columns: 1fr 1.5fr;
+          margin: 8rem 0;
+          margin-bottom: 0rem;
+          justify-content: center;
+          }
+     .services h1.section-head{
+          font-size: 32px;
+          text-align: center;
+          position: relative;
+     }
+     
+     .services h1.section-head::after{
+          content: ' ';
+          width: 80px;
+          height: 7px;
+          background-color: #086AD8;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -10px;
+          margin: 0 auto;
+     }
+     .services-desc{
+          padding: 0 1rem;
+          padding-left: 4rem;
+          align-self: flex-start;
+     }
+
+     .services-cat{
+          height: 50%;
+          background-color: #00B6F3;        
+     }
+     .service-grid{
+          width: 80%;
+          align-items: center;
+          margin: 0 auto;
+          gap: 30px;
+     }
+     .services-cat > div > div{
+          text-align: center;
+          padding: 1rem 1rem 2rem 1rem;
+          background-color: #fff;
+          width: 300px;
+     }
+
+     .services-cat > div > div .icon-box{
+          width: 85px;
+          height: 68px;
+          margin: 0 auto;
+          margin-bottom: 1rem;
+     } 
+     .services-cat > div > div h3{
+          margin-bottom: 1rem;
+     }
+     .services-cat > div > div .icon-box img{
+          width: 27px;
+          height: 28px;
+          margin: auto;
+     }
+     .service-grid > div:nth-child(1) > div{
+        background: #DFFFF7;
+     }
+     .service-grid > div:nth-child(2) > div{
+          background: #FDCDFB;
+
+     }
+     .service-grid > div:nth-child(3) > div{
+          background: #F2E1FF;
+
+     }
+     .service-grid > div:nth-child(4) > div{
+          background: #FFF0A0;
+
+     }
+
+     .banner{
+          background-color: #086AD8;
+          justify-content: space-between;
+          padding: 6rem 4rem;
+          margin-top: 10rem;
+          position: relative;
+
+     }
+
+     .banner .banner-img{
+          height: auto;
+          background-color: red;
+     }
+
+     .banner .banner-img img{
+          position: absolute;
+          bottom: 0;
+          z-index: 1;
+     }
+     .banner .banner-desc{
+          width: 100%;
+          margin: 0 auto;
+          text-align: center;
+     }
+     .banner .banner-desc h1, .client-desc h1{
+          font-size: 50px;
+          color: #fff;
+     }
+     .banner .banner-desc .grid{
+          margin-top: 2rem;
+          gap: 30px;
+
+     }
+     .banner .banner-desc .grid > p{
+         /* width: 200px; */
+         background: #fff;
+         padding: 1.5rem 0;
+         font-size: 20px;
+     }
+
+     .circle-container{
+          position: relative;
+          width: 300px;
+          height: 300px;
+
+     }
+     .circle-container .circle-box{
+          position: relative;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
+     .circle-container .circle-box .img{
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 25%;
+          margin: auto;
+          height: 80px;
+          width: 80px;  
+          transform: rotate(calc(360deg/8 * var(--i)));
+          transform-origin: 210px;
+     }
+     .circle-container .circle-box .img img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: rotate(calc(-360deg/8 * var(--i)));
+     }
+     
+     .client{
+          margin:  7rem auto;
+          /* padding: 0 5rem; */
+          justify-content: space-between;
+     }
+
+     .client-desc{
+          width: 80%;
+          align-self: flex-start;
+     }
+     .client-desc h1{
+          color: #222222;
+     }
+     .client-desc > div{
+          margin: 2rem 0;
+     }
+     .client-desc > div img{
+          width: 150px;
+          height: 120px;
+     }
+
+     .work{
+          text-align: center;
+     }
+     .work h1{
+          font-size: 50px;
+          margin-bottom: 4rem;
+     }
+     .work-container{
+          padding: 0 4rem;
+          gap: 20px;
+     }
+     .work button{
+          margin: 5rem 0;
+     }
+     .work-container img{
+          width: 100%;
+          height: 100%;
+          }
+     .footer-banner{
+          background-color: #00B6F3;
+          color: #fff;
+          text-align: center;
+          padding: 4rem 16rem;
+     }
+     .footer-banner h1{
+          letter-spacing: 1px;
+          margin-bottom: 3rem;
+     }
+
+     footer{
+          background: #086AD8;
+          padding: 4rem 6rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 10rem;
+          font-size: 24px;
+          color: #fff;
+     }
+
+     .upper-footer .logo{
+          width: 200px;
+          height: 200px;
+     }
+     .upper-footer .logo img{
+          width: 100%;
+          height: 100%;
+     }
+     .upper-footer{
+          width: 80%;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 1rem;
+          height: auto;
+     }
+     .upper-footer ul{
+          justify-content: space-around;
+     }
+     footer .contact{
+          width: 100%;
+          text-align: center;
+     }
+     footer .contact > span{
+          margin: 2rem auto;
+          width: 50%;
+          justify-content: space-between;
+     }
+     footer .contact > div{
+          margin-bottom: 5rem;
+     }
+     .upper-footer ul li{
+          margin-right: 3rem;
+     }
+
+     .upper-footer ul li:last-child{
+          margin-right: 0;
+     }
+
+     @media screen and (max-width: 808px) {
+          section{
+               padding: 0 1rem;
+          }
+          .nav{
+               display: none;
+          }
+          .hero-text{
+               margin-top: 2rem;
+               padding-left: unset;
+          }
+          .hero-text h1{
+               font-size: 32px;
+               line-height: 2.5rem;
+          }
+          .grid{
+               grid-template-columns: 1fr;
+          }
+          .banner-img{
+               display: none;
+          }
+          .services-cat{
+               background-color: #fff;
+               height: 100%;
+               background-color: red;
+          }
+          .services{
+               text-align: center;
+               margin: 4rem 0;
+               height: auto;
+          }
+          .service-grid{
+               gap: 0;
+          }
+          .banner{
+               margin: 4rem 0;
+          }
+          .banner-desc p{
+               margin-bottom: 1rem;
+          }
+          h1.section-header{
+               font-size: 32px;
+          }
+          .client-desc{
+               text-align: center;
+               margin: 0 auto;
+          }
+          .circle-container .circle-box .img{
+               width: 60px;
+               height: 60px;
+               right: 65%;
+               top: 30%;
+          }
+          .circle-container .circle-box .img{
+               transform-origin: 150px;
+          }
+          .banner .banner-desc h1, .client-desc h1{
+               font-size: 32px;
+          }
+          .about-desc h1{
+               font-size: 30px;
+               line-height: 32px;
+          }
+          .hero{
+               row-gap: 3rem;
+          }
+          .hero-vector-bg-img img{
+               border-radius: 50%;
+          }
+
+          .footer-banner{
+               padding: 2rem 1rem; 
+          }
+     }
