@@ -6,8 +6,16 @@
             box-sizing: border-box;
         }
         body{
-          font-family: 'Roboto', sans-serif;
+          font-family: 'Poppins', sans-serif;
           overflow-x: hidden;
+          position: relative;
+        }
+        .hamburger-menu{
+          color: #fff;
+          display: none;
+        }
+        .hamburger-menu i{
+          font-size: 1.5rem;
         }
         a{
             color: #fefefe;
@@ -32,10 +40,6 @@
         .wrap{
           flex-wrap: wrap;
       }
-        .container{
-            max-width: 1300px;
-            margin: 0 auto;
-        }
         .btn{
             padding: 1rem 2.5rem;
             background: #086AD8;
@@ -45,6 +49,7 @@
             font-weight: 400;
             cursor: pointer;
             transition: .2s all ease-in-out;
+            border-radius: .5rem;
         }
         .btn:hover{
           opacity: .9;
@@ -57,10 +62,9 @@
             justify-content: space-between;
             background: #086AD8;
         }
-
         .nav .links.flex{
           width: 100%;
-          align-items: center !important;
+          align-items: center;
           justify-content: space-around;
         }
         .nav .links .nav-link{
@@ -80,18 +84,17 @@
       }
         .hero.flex{
             position: relative;
-            height: 95vh;
             justify-content: space-between;
         }
         .hero-text{
-          align-self: flex-start;
-            margin-top: 7rem;
             padding-left: 4rem;
         }
         .hero-text > h1{
-            font-size: 50px;
-            line-height: 4rem;
-        }
+             line-height: 4rem;
+          }
+          .hero-text h1, h1.section-header, .banner .banner-desc h1, .client-desc h1, .work h1{
+             font-size: 45px;
+          }
         .hero-text > p{
             font-size: 18px;
             margin-top: 2rem;
@@ -117,12 +120,11 @@
      h1.section-header{
           text-align:center;
           position: relative;
-          font-size: 50px;
           margin: 6rem 0;
      }
      h1.section-header::after{
           content: ' ';
-          width: 80px;
+          width: 90px;
           height: 7px;
           background-color: #086AD8;
           position: absolute;
@@ -130,6 +132,9 @@
           right: 0;
           bottom: -15px;
           margin: 0 auto;
+     }
+     .about, .work{
+          padding: 0 4rem;
      }
      .about-container{
           justify-content: space-between;
@@ -145,38 +150,24 @@
           line-height: 39px;
      }
      .about-desc p, .services-desc p, .services-cat > div > div p, .client-desc p{
-          font-size: 20px;
+          font-size: 18px;
           color: #797979;
           margin: 2rem 0;
-          line-height: 28px;
+          line-height: 26px;
      }
 /* ################ SERVICES SECTION ################## */
      .services{
           grid-template-columns: 1fr 1.5fr;
           margin: 8rem 0;
-          margin-bottom: 0rem;
           justify-content: center;
+          align-items: center;
           }
      .services h1.section-head{
           font-size: 32px;
           text-align: center;
           position: relative;
      }
-     
-     .services h1.section-head::after{
-          content: ' ';
-          width: 80px;
-          height: 7px;
-          background-color: #086AD8;
-          position: absolute;
-          left: 0;
-          right: 0;
-          bottom: -10px;
-          margin: 0 auto;
-     }
      .services-desc{
-          padding: 0 1rem;
-          padding-left: 4rem;
           align-self: flex-start;
      }
 
@@ -194,11 +185,10 @@
           text-align: center;
           padding: 1rem 1rem 2rem 1rem;
           background-color: #fff;
-          width: 300px;
      }
 
      .services-cat > div > div .icon-box{
-          width: 85px;
+          width: 80px;
           height: 68px;
           margin: 0 auto;
           margin-bottom: 1rem;
@@ -216,15 +206,12 @@
      }
      .service-grid > div:nth-child(2) > div{
           background: #FDCDFB;
-
      }
      .service-grid > div:nth-child(3) > div{
           background: #F2E1FF;
-
      }
      .service-grid > div:nth-child(4) > div{
           background: #FFF0A0;
-
      }
 
      .banner{
@@ -233,7 +220,6 @@
           padding: 6rem 4rem;
           margin-top: 10rem;
           position: relative;
-
      }
 
      .banner .banner-img{
@@ -244,6 +230,7 @@
      .banner .banner-img img{
           position: absolute;
           bottom: 0;
+          left: 4rem;
           z-index: 1;
      }
      .banner .banner-desc{
@@ -252,30 +239,25 @@
           text-align: center;
      }
      .banner .banner-desc h1, .client-desc h1{
-          font-size: 50px;
           color: #fff;
      }
      .banner .banner-desc .grid{
           margin-top: 2rem;
           gap: 30px;
-
      }
      .banner .banner-desc .grid > p{
-         /* width: 200px; */
          background: #fff;
          padding: 1.5rem 0;
-         font-size: 20px;
+         font-size: 18px;
      }
 
      .circle-container{
-          position: relative;
-          width: 300px;
+          width: 100%;
           height: 300px;
-
      }
      .circle-container .circle-box{
           position: relative;
-          right: 0;
+          right: 90px;
           width: 100%;
           height: 100%;
           display: flex;
@@ -286,13 +268,13 @@
           position: absolute;
           top: 0;
           bottom: 0;
+          right: 0;
           left: 0;
-          right: 25%;
-          margin: auto;
+          margin: auto !important;
           height: 80px;
           width: 80px;  
           transform: rotate(calc(360deg/8 * var(--i)));
-          transform-origin: 210px;
+          transform-origin: 230px;
      }
      .circle-container .circle-box .img img{
           width: 100%;
@@ -303,10 +285,10 @@
           left: 0;
           transform: rotate(calc(-360deg/8 * var(--i)));
      }
-     
+
      .client{
           margin:  7rem auto;
-          /* padding: 0 5rem; */
+          padding: 0 5rem;
           justify-content: space-between;
      }
 
@@ -320,21 +302,25 @@
      .client-desc > div{
           margin: 2rem 0;
      }
+     .client-desc .rate{
+          display: inline-block;
+          color: #086AD8;
+     }
+     .client-desc h3{
+          margin: .7rem 0;
+     }
      .client-desc > div img{
           width: 150px;
-          height: 120px;
      }
 
      .work{
           text-align: center;
      }
      .work h1{
-          font-size: 50px;
           margin-bottom: 4rem;
      }
      .work-container{
-          padding: 0 4rem;
-          gap: 20px;
+          gap: 25px;
      }
      .work button{
           margin: 5rem 0;
@@ -348,104 +334,175 @@
           color: #fff;
           text-align: center;
           padding: 4rem 16rem;
+          margin: 0 4rem;
+          border-radius: 10px;
      }
      .footer-banner h1{
-          letter-spacing: 1px;
           margin-bottom: 3rem;
      }
-
      footer{
-          background: #086AD8;
-          padding: 4rem 6rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          align-items: center;
-          margin-top: 10rem;
-          font-size: 24px;
-          color: #fff;
+          background: #29313c;
      }
-
-     .upper-footer .logo{
-          width: 200px;
-          height: 200px;
-     }
-     .upper-footer .logo img{
-          width: 100%;
-          height: 100%;
-     }
-     .upper-footer{
+     .footer-container{
+          grid-template-columns: 2fr 1fr 1fr;
+          gap: 2rem;
           width: 80%;
+          padding: 2rem 4rem;
           justify-content: space-between;
-          align-items: center;
-          margin-bottom: 1rem;
-          height: auto;
+          margin: 10rem auto 0 auto;
+          color: #fff;
+          line-height: 1.5rem;
+          font-weight: lighter;
      }
-     .upper-footer ul{
-          justify-content: space-around;
-     }
-     footer .contact{
-          width: 100%;
-          text-align: center;
-     }
-     footer .contact > span{
-          margin: 2rem auto;
-          width: 50%;
-          justify-content: space-between;
-     }
-     footer .contact > div{
-          margin-bottom: 5rem;
-     }
-     .upper-footer ul li{
-          margin-right: 3rem;
+     .logo-div p{
+          margin: 1.4rem 0;
      }
 
-     .upper-footer ul li:last-child{
-          margin-right: 0;
+     .footer-container ul li:first-child{
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom: 3rem;
+     }
+     hr{
+          border: 1px solid #b2b2b277;
+     }
+     .footer-btm{
+          padding: 1rem 0;
+          width: 72%;
+          margin: 0 auto;
+          display: flex !important;
+          justify-content: space-between;
+     }
+     .footer-btm ul li:last-child {
+          color: red;
+          list-style: disc;
+          color: #b2b2b2;
+          margin-left: 2rem;
+     }
+     .footer-container ul li a, .footer-btm, .footer-btm ul li a{
+          display: inline-block;
+          color: #b2b2b2;
+          margin-bottom: .7rem;
      }
 
-     @media screen and (max-width: 808px) {
-          section{
-               padding: 0 1rem;
+     .social-links i{
+     font-size: 20px;
+     padding: .8rem .9rem;
+     background-color: #086AD8;
+     border-radius: .5rem;
+     margin-right: 1rem;
+     }
+.hamburger-menu-dis{
+     background-color: #0869d8;
+     width: 75%;
+     position: fixed;
+     z-index: 5;
+     top: 68px;
+     right: 0;
+     height: 100%;
+     animation: .7s alternate slidein;
+}
+@keyframes slidein {
+     0%{
+          width: 0;
+     }
+     100%{
+          width: 80%;
+     }
+}
+.overlay{
+     width: 100%;
+     height: 100%;
+     background-color: #1f1f1fb3;
+     position: absolute;
+     filter: blur(5px);
+     top: 0;
+     left: 0;
+     z-index: 2;
+}
+
+/* ################# MOBILE SCREEN QUERY ############# */
+     @media screen and (max-width: 768px) {
+          .hamburger-menu{
+               color: #fff;
+               display: block;
+               cursor: pointer;
+             }
+             .links{
+               align-items: flex-start !important;
+               justify-content: flex-start;
+             }
+             .nav .links .nav-link{
+               margin-right: 0;
+               margin-bottom: 1.5rem;
+               padding: .5rem 1.2rem;
+             }
+             .nav .links .nav-link:last-child{
+               margin-left: 0;
+           }
+             .nav .links.flex{
+               flex-direction: column;
+               width: 100%;
+               align-items: center;
+               justify-content: space-around;
+             }
+             .header{
+               position: fixed;
+               z-index: 5;
+             }
+             .hero-text{
+               margin-top: 6rem !important;
+               align-items: unset;
+             }
+
+          section, .footer-container, .work, .about, .header{
+               padding: 0 1.5rem;
+          }
+          .footer-banner{
+               margin: 0 1.5rem;
           }
           .nav{
                display: none;
+          }
+          .show{
+               display: block;
           }
           .hero-text{
                margin-top: 2rem;
                padding-left: unset;
           }
           .hero-text h1{
-               font-size: 32px;
                line-height: 2.5rem;
           }
           .grid{
                grid-template-columns: 1fr;
+               width: 100%;
           }
           .banner-img{
                display: none;
           }
           .services-cat{
-               background-color: #fff;
-               height: 100%;
-               background-color: red;
+               align-items: center;
+               background-color: unset;
           }
           .services{
                text-align: center;
-               margin: 4rem 0;
+               margin: 4rem auto;
                height: auto;
           }
+          .services-cat div div{
+               width: 270px;
+          }
           .service-grid{
-               gap: 0;
+               gap: 20px;
+               width: unset;
           }
           .banner{
+               padding: 2rem 1.5rem;
                margin: 4rem 0;
           }
           .banner-desc p{
                margin-bottom: 1rem;
-          }
-          h1.section-header{
-               font-size: 32px;
           }
           .client-desc{
                text-align: center;
@@ -454,17 +511,16 @@
           .circle-container .circle-box .img{
                width: 60px;
                height: 60px;
-               right: 65%;
+               right: 15%;
                top: 30%;
           }
           .circle-container .circle-box .img{
                transform-origin: 150px;
           }
-          .banner .banner-desc h1, .client-desc h1{
+          .banner .banner-desc h1, .client-desc h1, .about-desc h1, h1.section-header, .hero-text h1{
                font-size: 32px;
           }
           .about-desc h1{
-               font-size: 30px;
                line-height: 32px;
           }
           .hero{
@@ -473,7 +529,6 @@
           .hero-vector-bg-img img{
                border-radius: 50%;
           }
-
           .footer-banner{
                padding: 2rem 1rem; 
           }

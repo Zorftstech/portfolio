@@ -24,6 +24,8 @@
 
 <body>
 
+    <div class="over"></div>
+
     <header class="header flex">
         <div class="logo" style="color: white;">
             zorftsTech
@@ -32,19 +34,20 @@
         
         <div class="nav">
             <ul class="links flex">
-                <li class="nav-link"><a href="#about">About Us</a></li>
-                <li class="nav-link"><a href="#projects">Projects</a></li>
-                <li class="nav-link"><a href="#ervices">Services</a></li>
-                <li class="nav-link"><a href="#contact">Contact Us</a></li>
+                <li class="nav-link"><a href="about.html">About Us</a></li>
+                <li class="nav-link"><a href="portfolio.html">Projects</a></li>
+                <li class="nav-link"><a href="services.html">Services</a></li>
+                <li class="nav-link"><a href="news.html">News</a></li>
+                <li class="nav-link"><a href="contact.html">Contact Us</a></li>
             </ul>
-            <!-- <div class="hamburger-menu hide">
-                <span>menu</span>
-            </div> -->
         </div>
+        <div class="hamburger-menu">
+            <i class="fa-sharp fa-regular fa-bars"></i>
+      </div>
 
     </header>
 
-     <section class="containe hero grid">
+     <section class="hero grid">
         <div class="hero-text">
             <h1>
                 Bringing your ideas to life with end-to-end software development.
@@ -64,7 +67,7 @@
     </section>
 
 
-    <section class="about container" id="about">
+    <section class="about" id="about">
         <h1 class="section-header">About Us</h1>
 
         <div class="about-container grid">
@@ -88,7 +91,7 @@
 
     <section class="services grid" id="services">
       <div class="services-desc">
-            <h1 class="section-head">Services</h1>
+            <h1 class="section-header">Services</h1>
             <p>We specialize in various technological services that will help bring your start up idea to life or an online product for your business.</p>
         </div>
 
@@ -147,17 +150,19 @@
         </div>
     </section>
 
-    <section class="client container grid">
+    <section class="client grid">
         <div class="client-desc">
             <h1>What our clients have to say.</h1>
             <div>
                 <img src="./assets/images/prince-akachi-4Yv84VgQkRM-unsplash (2) 1.png" alt="">
                 <h3>Sanni Adamu</h3>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star" style="color: 'red'"></i>
+                <span class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star" style="color: 'red'"></i>
+                </span>
             </div>
             <p>Working  with Zofts technologies was so smooth and their customer relationship was top notch.</p>
         </div>
@@ -206,37 +211,69 @@
     </section>
 
 
-    <div class="container footer-banner">
+    <div class=" footer-banner">
         <h1>Do you have a start up idea or you want a digital product for your business?</h1>
 
         <button class="btn">Lets begin</button>
     </div>
 
-    <!-- <footer>
-        <div class="upper-footer flex">
-            <div class="logo">
-                <img src="./assets/images/logo-wbg 3.png" alt="">
-            </div>
-            <ul class="flex">
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Our Team</a></li>
-                <li><a href="#">Our process</a></li>
-            </ul>
+    <footer>
+       <div class="footer-container grid">
+            <div class="logo-div">
+                <div class="footer-logo">
+                    <img src="./assets/images/logo-dbg-2.png" alt="">
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum neque quibusdam error, aperiam laudantium quas tempore ex tenetur corrupti nemo, expedita cum totam maxime corporis maiores animi atque, libero vel delectus ipsa architecto rerum repellendus quisquam? Blanditiis, fugit. Cum blanditiis, facere ad ab quasi repudiandae quam veniam ipsam delectus ratione.</p>
+
+                <span class="social-links">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </span>
         </div>
 
-        <div class="contact">
-           <span class="flex">
-            <span>+234 908 656 0336</span>
-            <span>info@zorftstech.com</span>
-           </span>
-            <div>1, Al Riyadh Estate, Bosso, Minna, Nigeria.</div>
-        </div>
+        <ul>
+            <li>Company</li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">My Choose Us</a></li>
+            <li><a href="#">My Career</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
 
-        <p>copyright 2022 Zorfts technologies. All rights reserved.</p>
-    </footer> -->
+        <ul>
+            <li>Categoeries</li>
+            <li><a href="#">Web Developement</a></li>
+            <li><a href="#">Graphics Design</a></li>
+            <li><a href="#">Landpages</a></li>
+            <li><a href="#">Branding</a></li>
+        </ul>
+       </div>
+       <hr>
+
+       <div class="footer-btm flex">
+        <p>copyright &copy; 2023 All Right Reserved</p>
+
+        <ul class="flex">
+            <li><a href="#">License</a></li>
+            <li><a href="#">Privacy</a></li>
+        </ul>
+       </div>
+    </footer>
 
     <!--========= JS Here =========-->
+
+    <script>
+        const btn = document.querySelector('.hamburger-menu');
+        const overlay = document.querySelector('.over')
+        const nav = document.querySelector('.nav');
+        const navIcon = document.querySelector('.hamburger-menu i');
+        btn.addEventListener('click', (e) => {
+            console.log(e)
+            nav.classList.toggle('hamburger-menu-dis')
+            nav.classList.toggle('show')
+            overlay.classList.toggle('overlay')
+        })
+    </script>
 
 </body>
 
