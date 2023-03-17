@@ -17,9 +17,16 @@
 
     <!--====== CSS Here ======-->
     <link rel="stylesheet" href="assets/css/index.css">
-
+    
+    <!--====== JAVASCRIPT Here ======-->
     <script src="https://kit.fontawesome.com/91fccaf9d3.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+	<script>
+		ScrollReveal({ duration: 2000 })
+	</script>
 </head>
 
 <body>
@@ -28,8 +35,7 @@
 
     <header class="header flex">
         <div class="logo" style="color: white;">
-            zorftsTech
-           <!-- <img src="./assets/images/logo-wbg 1.svg" alt=""> -->
+           <img src="./assets/images/logo.png" alt="">
         </div>
         
         <div class="nav">
@@ -44,7 +50,6 @@
         <div class="hamburger-menu">
             <i class="fa-sharp fa-regular fa-bars"></i>
       </div>
-
     </header>
 
      <section class="hero grid">
@@ -166,34 +171,9 @@
             </div>
             <p>Working  with Zofts technologies was so smooth and their customer relationship was top notch.</p>
         </div>
-        <div class="circle-container">
-            <div class="circle-box">
-                <div class="img" style="--i:1">
-                    <img src="./assets/images/pexels-mwabonje-1820919 (1) 1.png" alt="">
-                </div>
-                <div class="img" style="--i:2">
-                    <img src="./assets/images/bave-pictures-SJDWOw4FKeo-unsplash 2.png" alt="">
-                </div>
-                <div class="img" style="--i:3">
-                    <img src="./assets/images/etty-fidele-YYfzJhfNU14-unsplash 1.png" alt="">
-                </div>
-                <div class="img" style="--i:4">
-                    <img src="./assets/images/eye-for-ebony-aZzXKGcyWqk-unsplash (1) 1.png" alt="">
-                </div>
-                <div class="img" style="--i:5">
-                    <img src="./assets/images/leon-elldot-C8Q_zR8PDlA-unsplash 1.png" alt="">
-                </div>
-                <div class="img" style="--i:6">
-                    <img src="./assets/images/mubarak-showole-Ve7xjKImd28-unsplash 1 (1).png" alt="">
-                </div>
-                <div class="img" style="--i:7">
-                    <img src="./assets/images/pexels-mwabonje-1820919 (1) 1.png" alt="">
-                </div>
-                <div class="img" style="--i:8">
-                    <img src="./assets/images/etty-fidele-YYfzJhfNU14-unsplash 1.png" alt="">
-                </div>
-            </div>
-        </div>
+        <div class="circle-container flex">
+            <img src="./assets/images/Group 55 (1).png" alt="">
+
     </section>
 
     <section class="work">
@@ -261,9 +241,13 @@
     </footer>
 
     <!--========= JS Here =========-->
+    
+ 
+
 
     <script>
         const btn = document.querySelector('.hamburger-menu');
+        const sections = document.querySelectorAll('section');
         const overlay = document.querySelector('.over')
         const nav = document.querySelector('.nav');
         const navIcon = document.querySelector('.hamburger-menu i');
@@ -273,6 +257,9 @@
             nav.classList.toggle('show')
             overlay.classList.toggle('overlay')
         })
+            sections.forEach(((section) => {
+                ScrollReveal().reveal(section, { interval: 2000, reset: true });
+            }))
     </script>
 
 </body>
