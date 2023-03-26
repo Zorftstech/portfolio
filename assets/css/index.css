@@ -119,7 +119,9 @@
             justify-content: space-between;
         }
         .hero-text{
+          align-self: flex-start;
             padding-left: 4rem;
+            margin-top: 3rem;
         }
         .hero-text > h1{
              line-height: 4rem;
