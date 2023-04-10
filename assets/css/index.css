@@ -394,7 +394,7 @@
      }
      .footer-container ul li a:hover::before{
           content: " ";
-          width: 20px;
+          width: 10px;
           height: 3px;
           border-radius: 20px;
           background-color: #cacaca;
