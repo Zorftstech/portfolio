@@ -120,6 +120,18 @@ height: 100%;
      .contact-btn {
           display: none;
      }
+     .logo{
+          width: 200px;
+          height: 50px;
+     }
+}
+@media screen and (max-width: 576px) {
+     .contact-btn {
+          display: none;
+     }
+     .hero-vector-bg-img img{
+          display: none;
+     }
 }
 /* .nav .links .nav-link:last-child{
      margin-left: 7rem;
