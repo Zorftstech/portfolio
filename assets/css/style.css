@@ -7364,6 +7364,7 @@ input.form-control-sm {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  height: 500px;
 }
 .support__box .icon {
   margin-bottom: 25px;
