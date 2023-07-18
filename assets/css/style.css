@@ -3464,6 +3464,7 @@ input.form-control-sm {
 }
 .service__box .content p {
   line-height: 30px;
+  text-align: start;
 }
 .service__box--lists {
   text-align: left;
@@ -9556,6 +9557,7 @@ input.form-control-sm {
   color: #001d23;
   font-weight: 600;
   font-family: "Cerebri Sans";
+  font-size: 14px;
   display: block;
   position: relative;
   text-transform: capitalize;
@@ -9581,7 +9583,7 @@ input.form-control-sm {
   visibility: visible;
 }
 .footer__widget li:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .footer__widget--2 .title {
   color: #ffffff;
