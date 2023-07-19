@@ -4218,6 +4218,7 @@ input.form-control-sm {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  height: 20rem;
 }
 .whychoose__box .thumb-wrap {
   position: relative;

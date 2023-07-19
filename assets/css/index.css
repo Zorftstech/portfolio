@@ -71,6 +71,7 @@ section {
 }
 .logo {
   height: 50px;
+  width: 180px;
 }
 .logo > img {
   width: 100%;
