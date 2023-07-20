@@ -124,6 +124,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -4616,6 +4617,8 @@ input.form-control-sm {
   position: relative;
   border-bottom: 5px solid #086ad8;
   background: #ffffff;
+
+  border-radius: 8px;
 }
 .testimonials .owl-dots {
   position: absolute;
@@ -4864,6 +4867,7 @@ input.form-control-sm {
 .news__item {
   display: -ms-flexbox;
   display: flex;
+  border-radius: 8px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   align-items: center;
@@ -8587,6 +8591,7 @@ input.form-control-sm {
 
 .portfolio__box {
   border: 2px solid #f8f8f8;
+  border-radius: 6px;
   padding: 20px 20px;
   padding-bottom: 40px;
 }
