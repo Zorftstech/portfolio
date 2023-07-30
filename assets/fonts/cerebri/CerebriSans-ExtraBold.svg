@@ -1190,7 +1190,7 @@ d="M288 1457h232l-126 -664h-334zM778 1457h232l-126 -664h-334z" />
 d="M336 794h-232l126 664h334zM826 794h-232l126 664h334z" />
     <glyph glyph-name="quotedblbase" unicode="&#x201e;" horiz-adv-x="1106" 
 d="M336 -370h-232l126 664h334zM818 -370h-232l126 664h334z" />
-    <glyph glyph-name="dagger" unicode="&#x2020;" horiz-adv-x="987" 
+    <glyph glyph-name="dagger" unicode="&#x2023;" horiz-adv-x="987" 
 d="M928 1110v-205h-335v-1167h-207v1167h-327v205h327v348h207v-348h335z" />
     <glyph glyph-name="daggerdbl" unicode="&#x2021;" horiz-adv-x="1073" 
 d="M971 905h-335v-597h335v-205h-335v-365h-207v365h-327v205h327v597h-327v205h327v348h207v-348h335v-205z" />
