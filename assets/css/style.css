@@ -9769,4 +9769,29 @@ input.form-control-sm {
 /*# sourceMappingURL=style.css.map */
 
 
-/* @media (max-width: 1199px) */
+/* @media (max-width: 1199px) 
+*/
+.success-msg{
+  display: grid;
+  place-items: center; 
+  width: 400px; 
+  height: 200px; 
+  background-color: #022830; 
+  position: absolute; 
+  z-index: 10; left: 0; 
+  right: 0; top: 0; 
+  bottom: 0; 
+  margin: auto; 
+  border-radius: 8px; 
+  box-shadow: 2px 3px 10px rgba(255, 255, 255, 0.4);
+}
+.success-msg i{
+  font-size:'80px';
+}
+.success{
+  display: grid !important;
+}
+
+.success-msg.hidden{
+  display: none;
+}
