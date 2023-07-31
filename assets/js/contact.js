@@ -1,3 +1,12 @@
+let emailClear = document.getElementById('email');
+let nameClear = document.getElementById('name');
+let messageClear = document.getElementById('message');
+let telClear = document.getElementById('tel');
+let subjectClear = document.getElementById('subject');
+const success = document.getElementById('success')
+
+console.log(subjectClear)
+
 function handleFormSubmit(e) {
     e.preventDefault();
 
@@ -27,20 +36,15 @@ function handleFormSubmit(e) {
             throw new Error('Network response was not ok');
         }
         return response.json();
-        console.log(response)
     })
     .then(
         data => {
-            // Make sure that the formMessages div has the 'success' class.
-			$(formMessages).removeClass('error');
-			$(formMessages).addClass('success');
-
-			// Set the message text.
-			$(formMessages).text(response);
-
-			// Clear the form.
-			$('#contact-form input, #contact-form textarea').val('');
+            console.log(data)
+            formElement.reset();
+            console.log(messageClear)
+            success.classList.add('success')
         }
+        
     )
     .catch(error => {
                 // Make sure that the formMessages div has the 'error' class.
@@ -57,6 +61,8 @@ function handleFormSubmit(e) {
     })
 }
 
-
 const contactForm = document.getElementById('contact-form');
 contactForm.addEventListener('submit', handleFormSubmit);
+document.getElementById('close').addEventListener('click', () => {
+    success.classList.remove('success')
+})
