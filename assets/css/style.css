@@ -4691,6 +4691,11 @@ input.form-control-sm {
   }
 }
 
+.logo__img {
+  width: 150px;
+  height: 150px;
+}
+
 .authore--content {
   position: relative;
   z-index: 2;
