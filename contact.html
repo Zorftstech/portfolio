@@ -12,6 +12,7 @@
     <!--====== Title ======-->
     <!--====== Title ======-->
     <title>Contact Us - Zorfts Technologies</title>
+    <title>Contact Us - Zorfts Technologies</title>
     <meta name="description" content="Discover Zorfts Tech's expert IT consulting and innovative software development services, tailored to elevate your business and drive digital transformation." />
     <meta name="keywords" content="zorfts tech, Tanta, zorfts Technologies Ltd, TRANSFORM YOUR BUSINESS, Mobile app, IT consulting, custom Software development, Cybersecurity, Data analytics, Web development, Mobile app development, UI/UX design, IT support, IT consulting services" />
     <meta name="author" content="Zorfts Technologies Ltd" />
@@ -33,6 +34,11 @@
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+      <!-- our project just needs Font Awesome Solid + Brands -->
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
 
       <!-- our project just needs Font Awesome Solid + Brands -->
     <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
@@ -256,7 +262,12 @@
                         <div class="row justify-content-center">
                             <div class="col-xl-10">
                                 <div class="contact__form">
-                                    <form id="contact-form">
+                                    <form id="contact-form" style="position: relative !important;">
+                                        <div class="hidden success-msg" id="success">
+                                            <h2 style="color: #ffffff; opacity: 1;">Successfully sent ✔</h2>
+                                            
+                                            <div id="close" style="cursor: pointer; padding: 10px 25px; border: none; border-radius: 3px; color: #ffffff; background: #086ad8; font-weight: 5000;">Okay</div>
+                                        </div>
                                         <div class="row mt-none-30">
                                             <div class="col-xl-6 mt-30">
                                                 <div class="form__group">
@@ -448,6 +459,7 @@
                         <ul>
                             <li><a href="faq.html">Help & FAQ</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
+                            <!-- <li><a href="services.html">Pricing and plans</a></li> -->
                             <!-- <li><a href="services.html">Pricing and plans</a></li> -->
                             <li><a href="#0">Privacy Policy</a></li>
                         </ul>
