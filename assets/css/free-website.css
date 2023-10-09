@@ -10,6 +10,28 @@
     border-radius: 0.4rem;
     display: inline-block;
 }
+li {
+    list-style: disc;
+}
+header li, footer li {
+    list-style: none;
+}
+.offer-class {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.offer-list > ul {
+    font-size: 0.8rem;
+    color: #696969;
+}
+.offer-list > li {
+    margin-left: 1rem;
+}
+.offer-list > p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 
 .note {
     border-left: 3px solid #086ad8;
@@ -21,6 +43,10 @@
     height: auto;
     display: block;
     padding: 0 0 0 1rem;
+
+}
+.note li {
+    list-style: none;
 }
 .desc {
     margin: 1rem 4rem;
@@ -131,6 +157,10 @@ section h1 {
         font-size: 14px;
         margin-bottom: .6rem;
     }
+    .offer-class {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 
 
 }
@@ -140,6 +170,11 @@ section h1 {
         margin-top: 6rem;
     }
     .card-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .offer-class {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
