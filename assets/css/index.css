@@ -61,17 +61,17 @@ section {
   background-attachment: fixed;
 }
 .header {
-  height: 10vh;
+  /* height: 7vh; */
   width: 100%;
-  padding: 3rem 4rem;
+  padding: .5rem 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #086ad8;
 }
 .logo {
-  height: 50px;
-  width: 180px;
+  height: auto;
+  width: 60px;
 }
 .logo > img {
   width: 100%;
@@ -409,6 +409,10 @@ footer {
   color: #fff;
   line-height: 1.5rem;
   font-weight: lighter;
+}
+.footer-logo img{
+  width: 70px;
+  height: auto;
 }
 .logo-div p {
   margin: 1.4rem 0;
