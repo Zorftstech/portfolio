@@ -63,7 +63,7 @@ section {
 .header {
   /* height: 7vh; */
   width: 100%;
-  padding: .5rem 4rem;
+  padding: 1rem 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,6 +72,7 @@ section {
 .logo {
   height: auto;
   width: 60px;
+  height: 60px;
 }
 .logo > img {
   width: 100%;
@@ -536,7 +537,8 @@ hr {
 
 @media screen and (max-width: 768px) {
   .header .logo {
-    width: 150px;
+    width: 60px;
+    height: 60px;
   }
   .hamburger-menu {
     color: #fff;
